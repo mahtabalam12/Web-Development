@@ -1,0 +1,47 @@
+#container {
+    height: 300px;
+    width: 80% ;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+
+      display: flex; /*ye isliye diye ki sb box container me aa jaye  */
+     /* flex-direction: column ;  */
+
+   flex-direction: row; 
+   /* flex-direction: column;  */
+
+    justify-content: flex-start; /*hamara space kaise distribute hogi */
+    /* justify-content: space-around;  left, right, middle se space */
+    justify-content: space-evenly;/*  evenly ke case me --equal space hoga left middle right se  */
+   /* justify-content: space-between; */
+
+
+
+   flex-wrap: wrap-reverse;
+   /* flex-wrap: wrap; */
+   /* align-items: flex-start; */
+   align-items: baseline; 
+   /* align-content: center; */
+   /* align-content: flex-end; */
+   align-content: flex-start; 
+}
+
+
+#org {
+    align-self: center;
+}
+
+
+h1 {
+    text-align: center;
+}
+/* individual ko sb kuch de rhe hai property  */
+#container div {
+
+
+    height: 100px;
+    width: 50px;
+    color: white;
+    text-align: center;
+}

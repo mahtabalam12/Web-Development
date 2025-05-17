@@ -1,0 +1,52 @@
+/*
+#box1 {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+transition: width 2s ease-in 0.5s;
+}
+#box1:hover {
+    width: 600px;
+    background-color: yellow;
+}
+
+#box2 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transform: translate(200px, 200px) rotate(90deg);
+
+}
+#box3 {
+    width: 100px;
+    height: 100px;
+    background: lightblue;
+    transform: skewX(20deg);
+}
+#box4 {
+    width: 100px;
+    height: 100px;
+    background: lightgreen;
+    box-shadow: 2px 2px 5px green;
+}
+#box4:hover {
+    transition-duration: 2s;
+    background-color: black;
+}
+*/
+/* question  */
+div {
+    width: 100px;
+    height: 100px;
+    background-color:#7aa874;
+    margin: 10px auto;
+    background-image: url("flowerimage.jpg");
+     background-size: contain;   /*pura image aa jata hai contaim krne pe  */
+     /* background-size: cover; */
+     /* background-size: auto; */
+     color: white
+}
+
+
+
+

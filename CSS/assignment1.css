@@ -1,0 +1,38 @@
+p {
+    color: #a52a2a;
+    font-family: Georgia;
+    line-height: 30px;
+
+}
+h2 {
+    text-align: center;
+    color: black;
+    text-decoration: blue wavy underline;
+    
+    /* border:solid; */
+    /* width:50%; */
+}
+h3 {
+text-align:center;
+}
+
+
+h4 {
+    text-align: center;
+     /* text-decoration:dotted line-through ; */
+}
+
+a { 
+    color: green;
+    text-decoration: none;
+}
+button {
+    background-color: white;
+    color:blueviolet;
+}
+textarea {
+    color:#000000;
+}
+span {
+    text-decoration: underline;
+}

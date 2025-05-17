@@ -1,0 +1,141 @@
+
+/* universal selector */
+* { 
+    font-family: "arial";
+    background-color: white;
+} 
+
+/*h1 {
+ color: #b92b27;  
+}
+
+
+
+
+h3 {
+    color:red;
+}
+
+
+*/
+
+/* same color both the h1 and h3*/
+h1,
+h3 {
+    color: #b92b27;
+}
+
+
+
+
+/* id selector */
+#login {
+  background-color: blue;
+  color:red;
+}
+
+
+/* id selectors */
+#signup {
+    background-color: #b92b27;
+    color: white;
+}
+
+/* class selector */
+.upvote {
+    background-color: green;
+}
+
+/* descendent selector */ /*paragraph ke inside ancor tag ko color aur background color diye*/
+.post a {
+    color: purple;
+    background-color: yellow;
+}
+
+
+
+
+
+
+
+/* sibling combinator  p+h3 paragraph p immediately  baad h3 hoga uske sbko ko underline krdo*/
+p+h3 {
+    text-decoration: underline;
+}
+
+/* sibling combinator */
+.upvote + button {
+    background-color: cadetblue;
+}
+/* child combinator */
+div> input {
+    background-color: white;
+}
+
+
+
+/* attribute selector */
+input[type="password"] {
+color:black;
+}
+input[type="text"] {
+    color:yellow;
+}
+/*  
+ input[type] {
+    background-color: aqua;
+ } 
+ */
+
+
+
+
+/* Pseudoclass */
+
+ /* hower  */
+ button:hover {
+    background-color: black;
+ }
+
+ h3:hover {
+    text-decoration: overline;
+ }
+
+ /* active */
+ 
+ button:active {
+    background-color: yellow;
+ }
+
+p:active {
+    font-weight: bold;
+    color:black;
+}
+
+/* id ke help se set kr diya to wo change hogi nhi */
+
+
+input[type="radio"]:checked + label {
+    color:red;
+    font-weight: bold;
+}
+
+div:nth-of-type(2) {
+    background-color: blanchedalmond;
+}
+
+/* psedo element :: first letter */
+h1::first-letter {
+    color:black;
+}
+
+
+
+/* casding use */
+h3 {
+  background-color: yellow;
+}
+
+h3 {
+    background-color: black;
+}

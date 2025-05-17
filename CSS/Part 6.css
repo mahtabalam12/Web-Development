@@ -1,0 +1,121 @@
+.container {
+    width: 600px;
+    height: 300px;
+    background-color: yellow;
+    display: grid;
+      /* grid-template-rows: 50px 50px 50px;   */
+    /* grid-template-columns: 50px 50px 50px;  */
+    /* grid-template-rows: auto auto auto; */
+  
+    /* grid-template-columns: auto auto auto; */
+    row-gap: 10px; /* eqaul gap for both row column */
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+.item {
+    width: 100px;
+    height: 60px;
+    background-color: greenyellow;
+    border: 2px solid black;
+    text-align: center;
+}
+.one {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.two {
+    grid-row-start: 1;
+    grid-column: 2;
+}
+
+/* animations */
+.box {
+    width: 300px;
+    height: 100px;
+    background-color: pink;
+    animation-name: fontAnimation; 
+    animation-name: colorAnimate; 
+     animation-name: widthAnimate; 
+    animation-duration: 3s;
+    animation-timing-function: ease-in ;
+    animation-delay: 0s;
+    animation-direction: normal;
+     animation-iteration-count: 3; 
+    animation-iteration-count: infinite; 
+
+  /*animation:widthAnimate 3s ease-in 0s infinite normal; itna likh do doge ye kafi hai  */
+}
+@keyframes fontAnimation {
+    from {
+        font-size: 20px;
+    }
+    to {
+        font-size: 40px;
+    }
+}
+@keyframes colorAnimate {
+    from {
+        background-color: green;
+    }
+    to {
+        background-color: blue;
+    }
+}
+ 
+@keyframes widthAnimate {
+    from {
+        width: 10px;
+        
+    }
+    to {
+        width: 400px;
+    
+    }
+}
+
+@keyframes widthAnimate {
+    0% {
+        background-color: green;
+    }
+    50% {
+       background-color: yellow; 
+    }
+    100% {
+        background-color: black;
+    }
+}
+
+h1 {
+    background-color: yellow;
+    border: 2px solid black;
+}
+
+@media (width: 400px) {
+    h1 {
+
+    
+    background-color: black;
+    }
+}
+div {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+}
+@media (width: 500px) {
+    h1 {
+
+    background-color: red;
+    }
+}
+@media (min-width: 200px) and (max-width: 300px) {
+h1 {
+    background-color: magenta;
+}
+}
+@media(orientation:landscape) {
+    h1 {
+        background-color: aqua;
+    }
+}
